@@ -1,0 +1,72 @@
+.App {
+  overflow: hidden;
+
+}
+
+#container {
+  overflow: none;
+}
+
+#container canvas {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+.body-content {
+  z-index: 999;
+  color: red;
+}
+
+.container-main {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.container-app {
+  padding-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b6b6b6;
+}
+::-webkit-scrollbar-track {
+  background-color: hsla(0, 0%, 71.4%, 0.3);
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+
+/* maxlg: { max: "2100px" },
+lg: { max: "1800px" },
+mlg: { max: "1450px" },
+md: { max: "990px" },
+sm: { max: "600px" },
+xs: { max: "400px" },
+minmdsml: { max: "1200px" },
+minmd: "1700px",
+minlg: "2100px", */

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Grotesk-Remix-reg";
+  src: url("./assets/fonts/39DD9F_0_0.woff") format("woff");
+  src: url("./assets/fonts/39DD9F_0_0.ttf") format("truetype"),
+    url("./assets/fonts/39DD9F_0_0.woff") format("woff"),
+    url("./assets/fonts/39DD9F_0_0.woff2") format("eot"),
+    url("./assets/fonts/39DD9F_0_0.ttf") format("eot");
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Grotesk-Remix-reg";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
