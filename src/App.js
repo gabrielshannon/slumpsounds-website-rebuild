@@ -3,8 +3,9 @@ import React, { useCallback, useEffect, useState } from 'react';
 // import Footer from './components/Footer/Footer';
 import './App.css';
 import sceneImg from './assets/slumpspace-min.png';
-// import { ApolloProvider } from '@apollo/client';
-// import client from './apollo';
+import { ApolloProvider } from '@apollo/client';
+import client from './lib/apollo';
+import { Content } from './Content';
 // import Menu from './components/Menu/Menu';
 // import LinkTree from './components/LinkTree/LinkTree';
 
@@ -142,17 +143,20 @@ function App() {
   }, [init, animate]);
 
   return (
+    <ApolloProvider client={client}>
     <div className="App">
       <div id="container">
         <div className="container-app">
           <div className="container-main">
             <h1 className="body-content">Body of Content</h1>
             {/* <Menu></Menu> */}
+            <Content></Content>
           </div>
         </div>
         {/* <Footer></Footer> */}
       </div>
     </div>
+    </ApolloProvider>
   );
 }
 
