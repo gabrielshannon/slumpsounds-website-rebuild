@@ -1,13 +1,28 @@
 import * as THREE from 'three';
 import React, { useCallback, useEffect, useState } from 'react';
-// import Footer from './components/Footer/Footer';
+
 import './App.css';
+import './MediaPage.css';
 import sceneImg from './assets/slumpspace-min.png';
 import { ApolloProvider } from '@apollo/client';
 import client from './lib/apollo';
-import { Content } from './Content';
-// import Menu from './components/Menu/Menu';
-// import LinkTree from './components/LinkTree/LinkTree';
+
+
+
+import PostPage from './pages/PostPage';
+
+import HomePage from './pages/HomePage';
+
+import MediaPage from './pages/MediaPage';
+
+import Footer from './components/Footer';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// import { Button } from 'bootstrap';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
   let camera;
@@ -144,20 +159,74 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-    <div className="App">
-      <div id="container">
-        <div className="container-app">
-          <div className="container-main">
-            <h1 className="body-content">Body of Content</h1>
-            {/* <Menu></Menu> */}
-            <Content></Content>
+      <Router>
+        <div id="container">
+          <div class="container">
+            <Navbar></Navbar>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/media" component={MediaPage} />
+              <Route path="/blog/:slug" component={PostPage} />
+            </Switch>
+            <Footer></Footer>
           </div>
         </div>
-        {/* <Footer></Footer> */}
-      </div>
-    </div>
+      </Router>
     </ApolloProvider>
   );
+
+  // return (
+  //   <ApolloProvider client={client}>
+
+  //       <div className="App">
+  //         <div id="container">
+  //           <div className="container">
+  //             <div className="container-main">
+  //               {/* <Menu></Menu> */}
+  //               {/* <Button></Button> */}
+  // <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  //   <img className="loading-img" src={slumpLogo}></img>{' '}
+  //   <button
+  //     class="navbar-toggler"
+  //     type="button"
+  //     data-toggle="collapse"
+  //     data-target="#navbarNavAltMarkup"
+  //     aria-controls="navbarNavAltMarkup"
+  //     aria-expanded="false"
+  //     aria-label="Toggle navigation"
+  //   >
+  //     <span class="navbar-toggler-icon"></span>
+  //   </button>
+  //   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  //     <div class="navbar-nav">
+  //       <a class="nav-item nav-link active" href="/">
+  //         Home <span class="sr-only">(current)</span>
+  //       </a>
+  //       <a class="nav-item nav-link" href="/">
+  //         Releases
+  //       </a>
+  //       <a class="nav-item nav-link" href="/">
+  //         Radio / Archives
+  //       </a>
+  //       <a class="nav-item nav-link" href="/">
+  //         Info
+  //       </a>
+  //     </div>
+  //   </div>
+  // </nav>
+  //               <Routes>
+  //               <Route exact path="/" component={Content}  />
+  //               {/* <Route path="/blog/:slug" component={< PostPage />} exact /> */}
+
+  //               </Routes>
+  //             </div>
+  //           </div>
+  //           {/* <Footer></Footer> */}
+  //         </div>
+  //       </div>
+
+  //   </ApolloProvider>
+  // );
 }
 
 export default App;
