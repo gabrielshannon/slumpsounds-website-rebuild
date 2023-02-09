@@ -82,6 +82,8 @@ Conditional Styling */
 
 .posts-list {
   text-align: center;
+  overflow-y: auto;
+  height: 65vh;
  
 }
 
