@@ -1,19 +1,21 @@
 import * as THREE from 'three';
 import React, { useCallback, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import './App.css';
-import "./MediaPage.css"
+import './MediaPage.css';
 import sceneImg from './assets/slumpspace-min.png';
 import { ApolloProvider } from '@apollo/client';
 import client from './lib/apollo';
 
-import slumpLogo from './assets/slumplogo.svg';
+
 
 import PostPage from './pages/PostPage';
 
 import HomePage from './pages/HomePage';
 
 import MediaPage from './pages/MediaPage';
+
+import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -160,12 +162,13 @@ function App() {
       <Router>
         <div id="container">
           <div class="container">
-<Navbar></Navbar>
+            <Navbar></Navbar>
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/media" component={MediaPage} />
               <Route path="/blog/:slug" component={PostPage} />
             </Switch>
+            <Footer></Footer>
           </div>
         </div>
       </Router>
