@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { gql, useQuery } from '@apollo/client';
-import loadingImage from './assets/loadingImage.svg';
-import PostCard from './components/PostCard';
+import loadingImage from '../assets/loadingImage.svg';
+import PostCard from '../components/PostCard';
+
 const GET_ALL_POSTS = gql`
   query NewQuery {
     posts {
@@ -20,7 +21,7 @@ const GET_ALL_POSTS = gql`
   }
 `;
 
-export const Content = () => {
+const HomePage = () => {
   const { loading, error, data } = useQuery(GET_ALL_POSTS);
 
   if (loading)
@@ -43,8 +44,12 @@ export const Content = () => {
       {data.posts.nodes.map((post) => (
         <PostCard key={post.databaseId} post={post} />
       ))}
+     
+
     </div>
   );
 };
+
+export default HomePage
 
 // https://www.youtube.com/watch?v=cdBBCCvIqvo&ab_channel=WPEngineBuilders

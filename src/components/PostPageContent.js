@@ -4,9 +4,14 @@ import { Link } from 'react-router-dom';
 const formatDate = (date) => new Date(date).toLocaleDateString();
 
 export default function PostPageContent({ post }) {
-  const { date, title, content, author, categories } = post;
-  const haveCategories = Boolean(categories?.nodes?.length);
-  return <h1>{title}</h1>;
+//   const { date, title, content, author, categories } = post;
+
+
+//   const haveCategories = Boolean(categories?.nodes?.length);
+
+
+
+  return <h1>Hi</h1>;
   //   return (
   //     <article>
   //       <h1>{title}</h1>

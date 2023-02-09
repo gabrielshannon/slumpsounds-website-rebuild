@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function PostCard({ post }) {
   const { title, slug, featuredImage } = post;
+  
 
   console.log(slug)
 
