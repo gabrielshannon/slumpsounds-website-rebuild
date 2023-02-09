@@ -44,12 +44,10 @@ const HomePage = () => {
       {data.posts.nodes.map((post) => (
         <PostCard key={post.databaseId} post={post} />
       ))}
-     
-
     </div>
   );
 };
 
-export default HomePage
+export default HomePage;
 
 // https://www.youtube.com/watch?v=cdBBCCvIqvo&ab_channel=WPEngineBuilders

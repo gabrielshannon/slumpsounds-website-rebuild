@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PostPageContent from '../components/PostPageContent';
 import { gql, useQuery } from '@apollo/client';
+import loadingImage from '../assets/loadingImage.svg';
+
 
 const GET_POST_BY_SLUG = gql`
   query getPostBySlug($id: ID!) {
@@ -37,7 +39,9 @@ export default function PostPage(props) {
     <div className="page-container">
       <Link to="/">← Home</Link>
       {loading ? (
-        <p>Loading…</p>
+        <div>
+        <img className="loading-img" src={loadingImage}></img>{' '}
+      </div>
       ) : error ? (
         <p>Error: {error.message}</p>
       ) : !postFound ? (

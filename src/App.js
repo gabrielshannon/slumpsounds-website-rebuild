@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import React, { useCallback, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
+import "./MediaPage.css"
 import sceneImg from './assets/slumpspace-min.png';
 import { ApolloProvider } from '@apollo/client';
 import client from './lib/apollo';
@@ -11,11 +13,14 @@ import PostPage from './pages/PostPage';
 
 import HomePage from './pages/HomePage';
 
+import MediaPage from './pages/MediaPage';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import { Button } from 'bootstrap';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
   let camera;
@@ -155,49 +160,15 @@ function App() {
       <Router>
         <div id="container">
           <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <img className="loading-img" src={slumpLogo}></img>{' '}
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="/">
-                    Home <span class="sr-only">(current)</span>
-                  </a>
-                  <a class="nav-item nav-link" href="/">
-                    Releases
-                  </a>
-                  <a class="nav-item nav-link" href="/">
-                    Radio / Archives
-                  </a>
-                  <a class="nav-item nav-link" href="/">
-                    Info
-                  </a>
-                </div>
-              </div>
-            </nav>
+<Navbar></Navbar>
             <Switch>
-    
-            <Route exact path="/" component={HomePage} />
-
-              <Route path="/blog/:slug" component={PostPage}/>
-              
-           
+              <Route exact path="/" component={HomePage} />
+              <Route path="/media" component={MediaPage} />
+              <Route path="/blog/:slug" component={PostPage} />
             </Switch>
           </div>
         </div>
       </Router>
-
-  
     </ApolloProvider>
   );
 
