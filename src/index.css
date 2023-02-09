@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  font-family: "Grotesk-Remix-reg";
+  font-family: "Grotesk-Remix-reg" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
