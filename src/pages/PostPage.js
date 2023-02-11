@@ -38,8 +38,8 @@ export default function PostPage(props) {
   return (
     <div className="page-container">
       <Link to="/">← Home</Link>
-      {loading ? (
-        <div>
+      {!loading ? (
+        <div className='page-loading-container'>
         <img className="loading-img" src={loadingImage}></img>{' '}
       </div>
       ) : error ? (

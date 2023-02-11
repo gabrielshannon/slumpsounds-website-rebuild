@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
+
 
 // const formatDate = (date) => new Date(date).toLocaleDateString();
 
@@ -29,8 +31,8 @@ export default function PostCard({ post }) {
         />
       ) : null}
       <div className='menu-item"'>
-        <Link to={`/blog/${slug}`}>
-          <h3>{title}</h3>
+        <Link  style={{ textDecoration: 'none' }} to={`/blog/${slug}`}>
+          <h3 className='post-card-title'>{title}</h3>
         </Link>{' '}
       </div>
       <div className="metadata">
