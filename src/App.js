@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import './App.css';
 import './MediaPage.css';
+import './PlayerApp.css'
 import sceneImg from './assets/slumpspace-min.png';
 import { ApolloProvider } from '@apollo/client';
 import client from './lib/apollo';
@@ -23,6 +24,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ReleasesPage from './pages/ReleasesPage';
 
 function App() {
   let camera;
@@ -165,6 +167,7 @@ function App() {
             <Navbar></Navbar>
             <Switch>
               <Route exact path="/" component={HomePage} />
+              <Route path="/releases" component={ReleasesPage} />
               <Route path="/media" component={MediaPage} />
               <Route path="/blog/:slug" component={PostPage} />
             </Switch>
