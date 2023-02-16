@@ -12,13 +12,8 @@ const ReleasesPage = () => {
       <div className="media-widget">
         <div className="audio-items">
           <div className="player-area">
-            {/* <AudioPlayer
-              src="https://file-examples.com/storage/fe1aa0c9d563ea1e4a1fd34/2017/11/file_example_MP3_700KB.mp3"
-              CustomIcons={{
-                play: PlayPause,
-              }} */}
-            {/* /> */}
-            <ul className="menu-items">
+  <div className='menu'>
+  <ul className="menu-items">
               {ReleasesItems.map((item, index) => (
                 <li
                   key={index}
@@ -29,6 +24,8 @@ const ReleasesPage = () => {
                 </li>
               ))}
             </ul>
+  </div>
+       
 
             <AudioPlayer
               autoPlay

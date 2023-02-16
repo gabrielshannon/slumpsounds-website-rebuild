@@ -131,93 +131,84 @@ export const mediaItems = [
 ];
 
 
+
 export const ReleasesItems = [
   {
-    item: 'Baccy Beard Nearest exomoon',
-    audioData: 'https://www.youtube.com/embed/dGJZMzn8Lvs?autoplay=0',
-    audio: 0,
+    item: "baccy beard - 4head",
+    data:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
+    audio:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/11/4head-320kbs-MP3-1.mp3",
   },
 
+  {
+    item: "baccy beard - Kov",
+    data:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Kov-320kbs-MP3.mp3",
+  },
+
+  {
+    item: "baccy beard - Unfolded",
+    data:
+     "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
+    audio:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/11/Unfolded-320kbs-MP3.mp3",
+  },
+
+  {
+    item: "Job Type - Numbers Vol.3",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_10.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.3-1.mp3",
+  },
+
+  {
+    item: "Job Type - Numbers Vol.2",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.mp3",
+  },
+
+  {
+    item: "baccy beard - nearest@exomoon",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/SLMP_D001_-baccy-beard-nearest@exomoon-mp3-image-2048x2048-1.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon.mp3",
+  },
+
+  {
+    item: "Lydios - LOCKDOWN IN ELLESS VOL. 1",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/saveme-1024x1024.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.1.mp3",
+  },
+
+  {
+    item: "Lydios - LOCKDOWN IN ELLESS VOL. 2",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/Lockdown-in-Elless-Vol.2-edited.jpg",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.2.mp3",
+  },
+
+  {
+    item: "SLUMP - Production Tape 1",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_102.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP001_-LUMP-TAPE-1.mp3",
+  },
+  {
+    item: "Lydios - LS17",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.mp3",
+  },
+
+  {
+    item: "Lydios - LS22",
+    data:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.png",
+    audio:
+      "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.mp3",
+  },
+
+  {
+    item: "Lydios - SOLIDMIXTAPE1",
+    data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_101.png",
+    audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LYDIOS-SOLIDMIXTAPE1.mp3",
+  },
 ]
 
-// id: "Releases:",
-// items: [
-//   {
-//     item: "baccy beard - 4head",
-//     data:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
-//     audio:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/11/4head-320kbs-MP3-1.mp3",
-//   },
-
-//   {
-//     item: "baccy beard - Kov",
-//     data:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Kov-320kbs-MP3.mp3",
-//   },
-
-//   {
-//     item: "baccy beard - Unfolded",
-//     data:
-//      "https://slmpbackend8080.online/wp-content/uploads/2021/12/key-1024x1024.png",
-//     audio:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/11/Unfolded-320kbs-MP3.mp3",
-//   },
-
-//   {
-//     item: "Job Type - Numbers Vol.3",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_10.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.3-1.mp3",
-//   },
-
-//   {
-//     item: "Job Type - Numbers Vol.2",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Job-Type-Numbers-Vol.2.mp3",
-//   },
-
-//   {
-//     item: "baccy beard - nearest@exomoon",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/SLMP_D001_-baccy-beard-nearest@exomoon-mp3-image-2048x2048-1.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP_D001_-baccy-beard-nearest@exomoon.mp3",
-//   },
-
-//   {
-//     item: "Lydios - LOCKDOWN IN ELLESS VOL. 1",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/saveme-1024x1024.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.1.mp3",
-//   },
-
-//   {
-//     item: "Lydios - LOCKDOWN IN ELLESS VOL. 2",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/12/Lockdown-in-Elless-Vol.2-edited.jpg",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/Lockdown-in-ELLESS-Vol.2.mp3",
-//   },
-
-//   {
-//     item: "SLUMP - Production Tape 1",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_102.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/SLMP001_-LUMP-TAPE-1.mp3",
-//   },
-//   {
-//     item: "Lydios - LS17",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS17.mp3",
-//   },
-
-//   {
-//     item: "Lydios - LS22",
-//     data:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.png",
-//     audio:
-//       "https://slmpbackend8080.online/wp-content/uploads/2021/11/LS22.mp3",
-//   },
-
-//   {
-//     item: "Lydios - SOLIDMIXTAPE1",
-//     data: "https://slmpbackend8080.online/wp-content/uploads/2021/11/a2448293808_101.png",
-//     audio: "https://slmpbackend8080.online/wp-content/uploads/2021/11/LYDIOS-SOLIDMIXTAPE1.mp3",
-//   },
-// ],
-// },
