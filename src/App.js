@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import React, { useCallback, useEffect, useState } from 'react';
 
 import './App.css';
-import './MediaPage.css';
 import './PlayerApp.css'
 import sceneImg from './assets/slumpspace-min.png';
 import { ApolloProvider } from '@apollo/client';
@@ -14,7 +13,6 @@ import PostPage from './pages/PostPage';
 
 import HomePage from './pages/HomePage';
 
-import MediaPage from './pages/MediaPage';
 
 import Footer from './components/Footer';
 
@@ -168,7 +166,6 @@ function App() {
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route path="/releases" component={ReleasesPage} />
-              <Route path="/media" component={MediaPage} />
               <Route path="/blog/:slug" component={PostPage} />
             </Switch>
             <Footer></Footer>

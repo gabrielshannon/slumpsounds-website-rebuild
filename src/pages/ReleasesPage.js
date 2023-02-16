@@ -9,34 +9,30 @@ import { ReleasesItems } from '../data/data';
 const ReleasesPage = () => {
   return (
     <div className="media-page">
-      <div className="media-widget">
-        <div className="audio-items">
+      <div className="audio-items">
+        <div className="menu">
+          <ul className="menu-items">
+            {ReleasesItems.map((item, index) => (
+              <li
+                key={index}
+                // onClick={() => handleDrill(index)}
+                className="menu-item"
+              >
+                {item.item}
+              </li>
+            ))}
+          </ul>
           <div className="player-area">
-  <div className='menu'>
-  <ul className="menu-items">
-              {ReleasesItems.map((item, index) => (
-                <li
-                  key={index}
-                  // onClick={() => handleDrill(index)}
-                  className="menu-item"
-                >
-                  {item.item}
-                </li>
-              ))}
-            </ul>
-  </div>
-       
-
-            <AudioPlayer
-              autoPlay
-              src="https://file-examples.com/storage/fe1aa0c9d563ea1e4a1fd34/2017/11/file_example_MP3_700KB.mp3"
-              onPlay={(e) => console.log('onPlay')}
-          
-            />
-          </div>
+          <AudioPlayer
+            autoPlay
+            src="https://file-examples.com/storage/fe1aa0c9d563ea1e4a1fd34/2017/11/file_example_MP3_700KB.mp3"
+            onPlay={(e) => console.log('onPlay')}
+          />
         </div>
-        <div className="photo-items"></div>
+        </div>
+ 
       </div>
+      <div className="photo-items"></div>
     </div>
   );
 };
