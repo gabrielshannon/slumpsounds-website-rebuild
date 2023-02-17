@@ -10,29 +10,29 @@ const ReleasesPage = () => {
   return (
     <div className="media-page">
       <div className="audio-items">
-        <div className="menu">
-          <ul className="menu-items">
-            {ReleasesItems.map((item, index) => (
-              <li
-                key={index}
-                // onClick={() => handleDrill(index)}
-                className="menu-item"
-              >
-                {item.item}
-              </li>
-            ))}
-          </ul>
-          <div className="player-area">
-          <AudioPlayer
-            autoPlay
-            src="https://file-examples.com/storage/fe1aa0c9d563ea1e4a1fd34/2017/11/file_example_MP3_700KB.mp3"
-            onPlay={(e) => console.log('onPlay')}
-          />
+        <div className="menu-items">
+          {ReleasesItems.map((item, index) => (
+            <p
+              key={index}
+              className="menu-item"
+            >
+              {item.item}
+            </p>
+          ))}
         </div>
-        </div>
- 
+        <AudioPlayer
+          autoPlay
+          src="http://slumpsounds.online/wp-content/uploads/2023/02/SLMP_D001_-baccy-beard-nearest@exomoon.mp3"
+          onPlay={(e) => console.log('onPlay')}
+        />
       </div>
-      <div className="photo-items"></div>
+      <div className="photo-items">
+        <div className='image-border'>
+        <img className='image-item' src="http://slumpsounds.online/wp-content/uploads/2023/02/exomoon.jpg" alt="Girl in a jacket" width="450"  />
+
+
+        </div>
+      </div>
     </div>
   );
 };

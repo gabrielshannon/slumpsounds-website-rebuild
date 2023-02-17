@@ -17,10 +17,17 @@
     position: absolute;
     z-index: 3;
     width: 10px !important;
-    height: 20px;
+    height: 10px !important;
     margin-left: -10px;
-    top: -8px;
+    top: -4px;
     background: #868686;
     border-radius: 50px;
     box-shadow: rgb(134 134 134 / 50%) 0 0 5px;
+}
+
+
+.rhap_progress-bar {
+  
+    height: 2px !important ;
+    
 }

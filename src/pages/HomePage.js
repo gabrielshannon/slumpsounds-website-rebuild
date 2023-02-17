@@ -26,7 +26,7 @@ const HomePage = () => {
 
   if (loading)
     return (
-      <div>
+      <div className="outer-page">
         <img className="loading-img" src={loadingImage}></img>{' '}
       </div>
     );
@@ -40,11 +40,13 @@ const HomePage = () => {
   console.log(data.posts);
 
   return (
-    <div className="posts-list">
-      {data.posts.nodes.map((post) => (
-        <PostCard key={post.databaseId} post={post} />
-      ))}
-    </div>
+
+      <div className="posts-list">
+        {data.posts.nodes.map((post) => (
+          <PostCard key={post.databaseId} post={post} />
+        ))}
+      </div>
+
   );
 };
 

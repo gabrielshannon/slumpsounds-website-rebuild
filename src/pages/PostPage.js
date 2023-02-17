@@ -36,8 +36,12 @@ export default function PostPage(props) {
   const postFound = Boolean(data?.post);
 
   return (
+    <>
+
+
+    <Link to="/">← Home</Link>
     <div className="page-container">
-      <Link to="/">← Home</Link>
+
       {!loading ? (
         <div className='page-loading-container'>
         <img className="loading-img" src={loadingImage}></img>{' '}
@@ -50,5 +54,6 @@ export default function PostPage(props) {
         <PostPageContent post={data.post} />
       )}
     </div>
+    </>
   );
 }
