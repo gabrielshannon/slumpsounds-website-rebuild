@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import ReleasesPage from './pages/ReleasesPage';
+import InfoPage from './pages/InfoPage';
 import PostPage from './pages/PostPage';
 
 import './App.css';
@@ -163,6 +164,8 @@ function App() {
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/releases" component={ReleasesPage} />
+                <Route path="/info" component={InfoPage} />
+ 
                 <Route path="/blog/:slug" component={PostPage} />
               </Switch>
               <Footer></Footer>

@@ -19,6 +19,7 @@
   height: 75vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .body-content {
@@ -77,6 +78,7 @@ ul {
   width: 100px;
   padding: 3px;
 }
+
 
 /* /////////// */
 
@@ -180,4 +182,20 @@ li {
 .image-border {
   border: 1px solid #cfcfcf;
   box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
+}
+
+
+
+.info-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 71.4%, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #cfcfcf;
+}
+
+.info-page {
+ padding: 12px;
 }
