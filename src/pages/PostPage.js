@@ -4,7 +4,6 @@ import PostPageContent from '../components/PostPageContent';
 import { gql, useQuery } from '@apollo/client';
 import loadingImage from '../assets/loadingImage.svg';
 
-
 const GET_POST_BY_SLUG = gql`
   query getPostBySlug($id: ID!) {
     post(id: $id, idType: SLUG) {
@@ -35,25 +34,36 @@ export default function PostPage(props) {
 
   const postFound = Boolean(data?.post);
 
+  // console.log(post);
+
   return (
     <>
+<div>
 
 
-    <Link to="/">← Home</Link>
-    <div className="page-container">
-
-      {!loading ? (
-        <div className='page-loading-container'>
-        <img className="loading-img" src={loadingImage}></img>{' '}
-      </div>
-      ) : error ? (
-        <p>Error: {error.message}</p>
-      ) : !postFound ? (
-        <p>Post could not be found.</p>
+<Link to="/">← Home</Link> 
+      <div className="post-page-container">
+        {!postFound ? (
+        <img className="loading-img" src={loadingImage}></img>
       ) : (
         <PostPageContent post={data.post} />
       )}
-    </div>
+      </div>
+
+        {/* <PostPageContent post={data.post} /> */}
+
+        {/* {!loading ? (
+          <div className="page-loading-container">
+            <img className="loading-img" src={loadingImage}></img>{' '}
+          </div>
+        ) : error ? (
+          <p>Error: {error.message}</p>
+        ) : !postFound ? (
+          <p>Post could not be found.</p>
+        ) : (
+          <p>{data.post.content}</p>
+        )} */}
+      </div>
     </>
   );
 }

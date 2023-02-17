@@ -40,7 +40,9 @@
 
 .post-content {
   overflow-y: auto;
-  height: 500px;
+  /* height: 500px; */
+  height: 65vh;
+  padding: 12px;
   text-align: center;
 }
 

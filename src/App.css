@@ -27,7 +27,7 @@
 }
 
 .loading-img {
-width: 100px;
+  width: 100px;
 }
 
 .featured-image {
@@ -79,8 +79,14 @@ ul {
   padding: 3px;
 }
 
-
 /* /////////// */
+
+.post-page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+}
 
 .page-loading-container {
   display: flex;
@@ -184,8 +190,6 @@ li {
   box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
 }
 
-
-
 .info-page {
   display: flex;
   justify-content: center;
@@ -197,5 +201,5 @@ li {
 }
 
 .info-page {
- padding: 12px;
+  padding: 12px;
 }

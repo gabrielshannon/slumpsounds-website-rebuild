@@ -63,7 +63,6 @@ function App() {
   }, []);
 
   const init = useCallback(() => {
-    console.log('init');
     /// 3D BACKGROUND CODE
     let container, mesh;
     container = document.getElementById('container');
